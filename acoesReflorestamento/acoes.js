@@ -69,5 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
         acoes.push(acao);
 
         localStorage.setItem('acoesReflorestamento', JSON.stringify(acoes));
+
+        window.location.href = '../relatorio/relatorio.html?acao_registrada=true';
     });
 });

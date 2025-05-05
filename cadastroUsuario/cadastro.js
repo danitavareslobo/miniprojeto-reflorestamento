@@ -79,6 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         mostrarToast('Cadastro realizado com sucesso!', 'success', 3000);
         console.log('Objeto de usuário criado:', usuario);
-        
+
+        window.location.href = '../acoesReflorestamento/acoes.html?cadastro=true';        
     });
 });
