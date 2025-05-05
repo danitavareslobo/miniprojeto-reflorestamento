@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Ações - Reflorestamento</title>
+    <link rel="stylesheet" href="styleAcoes.css">
+    <link rel="shortcut icon" href="../assets/logo.ico" type="image/x-icon">
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Cadastro de Ações de Reflorestamento</h1>
+            <p>Registre suas ações de reflorestamento e contribua para um planeta mais verde!</p>
+        </header>
+
+        <form id="acaoForm">
+            <div class="form-group">
+                <label for="quantidade">Quantidade de árvores plantadas</label>
+                <input type="number" id="quantidade" name="quantidade" min="1" required>
+            </div>
+
+            <div class="form-group">
+                <label for="especie">Espécie de árvore plantada</label>
+                <select id="especie" name="especie" required>
+                    <option value="">Selecione uma espécie</option>
+                    <option value="ipe">Ipê</option>
+                    <option value="angico">Angico</option>
+                    <option value="aroeira">Aroeira</option>
+                    <option value="jequitiba">Jequitibá</option>
+                    <option value="peroba-campo">Peroba do Campo</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="data">Data do plantio</label>
+                <input type="date" id="data" name="data" required>
+            </div>
+
+            <div class="form-group">
+                <label for="local">Local do plantio</label>
+                <input type="text" id="local" name="local" required>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Registrar Ação</button>
+            </div>
+        </form>
+
+        <div id="confirmacao" class="confirmation">
+            Ação de reflorestamento registrada com sucesso!
+        </div>
+
+        <div class="tree-info">
+            <div class="tree-card">
+                <h3>Ipê</h3>
+                <p>Conhecido por suas flores exuberantes e coloridas, é um símbolo nacional brasileiro.</p>
+            </div>
+            <div class="tree-card">
+                <h3>Angico</h3>
+                <p>Árvore resistente, excelente para recuperação de áreas degradadas e preservação do solo.</p>
+            </div>
+            <div class="tree-card">
+                <h3>Aroeira</h3>
+                <p>Espécie medicinal com alto potencial ecológico para recuperação de áreas.</p>
+            </div>
+            <div class="tree-card">
+                <h3>Jequitibá</h3>
+                <p>Uma das maiores árvores da Mata Atlântica, podendo viver mais de 3.000 anos.</p>
+            </div>
+            <div class="tree-card">
+                <h3>Peroba do Campo</h3>
+                <p>Madeira nobre presente no Cerrado e Mata Atlântica, importante para ecossistemas.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="toast" class="toast">
+        <span id="toast-icon" class="toast-icon">✓</span>
+        <span id="toast-text" class="toast-text">Mensagem</span>
+        <span class="toast-close" onclick="fecharToast()">×</span>
+    </div>
+
+    <script src="acoes.js"></script>
+</body>
+</html>
