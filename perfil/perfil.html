@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuário - Reflorestamento</title>
+    <link rel="stylesheet" href="stylePerfil.css">
+    <link rel="shortcut icon" href="../assets/logo.ico" type="image/x-icon">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="profile-header">
+            <div class="profile-avatar">
+                <img id="avatar-img" src="" alt="Avatar">
+            </div>
+            <div class="profile-info">
+                <h1 id="nome-usuario">Nome do Usuário</h1>
+                <p id="email-usuario">email@exemplo.com</p>
+                <div class="profile-stats">
+                    <div class="stat-item">
+                        <div class="stat-value" id="arvores-plantadas">0</div>
+                        <div class="stat-label">Árvores Plantadas</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="data-cadastro">01/01/2024</div>
+                        <div class="stat-label">Membro desde</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-bio">
+            <h2>Biografia</h2>
+            <p id="bio-atual">Nenhuma biografia definida.</p>
+            <div class="bio-form">
+                <textarea id="bio-input" placeholder="Escreva sua biografia aqui..."></textarea>
+                <div class="bio-button-container">
+                    <button id="salvar-bio">Salvar Biografia</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="progress-container">
+            <div class="progress-header">
+                <h2 class="progress-title">Progresso de Reflorestamento</h2>
+                <span class="progress-info" id="progresso-info">0 de 1500+ árvores plantadas</span>
+            </div>
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="barra-progresso" style="width: 0%"></div>
+            </div>
+            <div class="progress-milestones">
+                <div class="milestone" id="milestone-0">
+                    <span class="milestone-label">0</span>
+                </div>
+                <div class="milestone" id="milestone-375">
+                    <span class="milestone-label">375</span>
+                </div>
+                <div class="milestone" id="milestone-750">
+                    <span class="milestone-label">750</span>
+                </div>
+                <div class="milestone" id="milestone-1050">
+                    <span class="milestone-label">1050</span>
+                </div>
+                <div class="milestone" id="milestone-1500">
+                    <span class="milestone-label">1500+</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="toast" class="toast">
+        <span id="toast-icon" class="toast-icon">✓</span>
+        <span id="toast-text" class="toast-text">Mensagem de notificação</span>
+        <span class="toast-close" onclick="document.getElementById('toast').classList.remove('show')">×</span>
+    </div>
+
+    <script src="perfil.js"></script>
+</body>
+</html>
