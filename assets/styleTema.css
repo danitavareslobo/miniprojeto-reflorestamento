@@ -24,6 +24,16 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
 
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
 body.pau-brasil {
     --primary-color: #D32F2F;
     --secondary-color: #B71C1C;

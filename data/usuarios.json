@@ -1,0 +1,158 @@
+{
+    "usuarios": [
+      {
+        "id": "ana_silva",
+        "nome": "Ana Silva",
+        "email": "ana.silva@email.com",
+        "usuario": "ana_silva",
+        "avatarArvore": "pau-brasil",
+        "arvoresPlantadas": 1200,
+        "bio": "Entusiasta da natureza e defensora da Mata Atlântica",
+        "dataCadastro": "2024-01-05T10:30:00Z"
+      },
+      {
+        "id": "carlos_pereira",
+        "nome": "Carlos Pereira",
+        "email": "carlos.pereira@email.com",
+        "usuario": "carlos_pereira",
+        "avatarArvore": "castanheira",
+        "arvoresPlantadas": 850,
+        "bio": "Engenheiro florestal trabalhando na recuperação de áreas degradadas",
+        "dataCadastro": "2024-01-10T08:45:00Z"
+      },
+      {
+        "id": "mariana_santos",
+        "nome": "Mariana Santos",
+        "email": "mariana.santos@email.com",
+        "usuario": "mariana_santos",
+        "avatarArvore": "peroba-rosa",
+        "arvoresPlantadas": 680,
+        "bio": "Bióloga e educadora ambiental",
+        "dataCadastro": "2024-01-15T14:20:00Z"
+      },
+      {
+        "id": "pedro_oliveira",
+        "nome": "Pedro Oliveira",
+        "email": "pedro.oliveira@email.com",
+        "usuario": "pedro_oliveira",
+        "avatarArvore": "pau-brasil",
+        "arvoresPlantadas": 450,
+        "bio": "Voluntário em projetos de reflorestamento urbano",
+        "dataCadastro": "2024-02-01T16:15:00Z"
+      },
+      {
+        "id": "julia_costa",
+        "nome": "Julia Costa",
+        "email": "julia.costa@email.com",
+        "usuario": "julia_costa",
+        "avatarArvore": "castanheira",
+        "arvoresPlantadas": 320,
+        "bio": "Estudante de agronomia com foco em sustentabilidade",
+        "dataCadastro": "2024-02-10T09:10:00Z"
+      },
+      {
+        "id": "maria_silva",
+        "nome": "Maria Silva",
+        "email": "maria.silva@email.com",
+        "usuario": "maria_silva",
+        "avatarArvore": "pau-brasil",
+        "arvoresPlantadas": 90,
+        "bio": "Apaixonada por plantas nativas brasileiras",
+        "dataCadastro": "2024-02-15T11:35:00Z"
+      },
+      {
+        "id": "joao_santos",
+        "nome": "João Santos",
+        "email": "joao.santos@email.com",
+        "usuario": "joao_santos",
+        "avatarArvore": "peroba-rosa",
+        "arvoresPlantadas": 30,
+        "bio": "Começando minha jornada de reflorestamento",
+        "dataCadastro": "2024-03-05T13:45:00Z"
+      },
+      {
+        "id": "lucia_costa",
+        "nome": "Lucia Costa",
+        "email": "lucia.costa@email.com",
+        "usuario": "lucia_costa",
+        "avatarArvore": "castanheira",
+        "arvoresPlantadas": 75,
+        "bio": "Trabalhando na preservação de nascentes",
+        "dataCadastro": "2024-03-01T10:25:00Z"
+      }
+    ],
+    "acoes": [
+      {
+        "idUsuario": "maria_silva",
+        "quantidade": 50,
+        "especie": "ipe",
+        "especieFormatada": "Ipê",
+        "data": "2024-04-15",
+        "local": "Parque Municipal",
+        "dataCadastro": "2024-04-16T10:30:00Z"
+      },
+      {
+        "idUsuario": "joao_santos",
+        "quantidade": 30,
+        "especie": "angico",
+        "especieFormatada": "Angico",
+        "data": "2024-04-10",
+        "local": "Margem do Rio Verde",
+        "dataCadastro": "2024-04-11T08:45:00Z"
+      },
+      {
+        "idUsuario": "ana_silva",
+        "quantidade": 100,
+        "especie": "aroeira",
+        "especieFormatada": "Aroeira",
+        "data": "2024-04-05",
+        "local": "Área de Preservação",
+        "dataCadastro": "2024-04-05T14:20:00Z"
+      },
+      {
+        "idUsuario": "carlos_pereira",
+        "quantidade": 25,
+        "especie": "jequitiba",
+        "especieFormatada": "Jequitibá",
+        "data": "2024-04-01",
+        "local": "Fazenda Esperança",
+        "dataCadastro": "2024-04-01T16:15:00Z"
+      },
+      {
+        "idUsuario": "maria_silva",
+        "quantidade": 40,
+        "especie": "peroba-campo",
+        "especieFormatada": "Peroba do Campo",
+        "data": "2024-03-28",
+        "local": "Serra do Sol",
+        "dataCadastro": "2024-03-29T09:10:00Z"
+      },
+      {
+        "idUsuario": "ana_silva",
+        "quantidade": 60,
+        "especie": "ipe",
+        "especieFormatada": "Ipê",
+        "data": "2024-03-25",
+        "local": "Escola Municipal",
+        "dataCadastro": "2024-03-25T11:35:00Z"
+      },
+      {
+        "idUsuario": "pedro_oliveira",
+        "quantidade": 35,
+        "especie": "angico",
+        "especieFormatada": "Angico",
+        "data": "2024-03-20",
+        "local": "Reserva Florestal",
+        "dataCadastro": "2024-03-21T13:45:00Z"
+      },
+      {
+        "idUsuario": "lucia_costa",
+        "quantidade": 75,
+        "especie": "aroeira",
+        "especieFormatada": "Aroeira",
+        "data": "2024-03-15",
+        "local": "Nascente do Córrego",
+        "dataCadastro": "2024-03-16T10:25:00Z"
+      }
+    ]
+  }

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Reflorestamento</title>
+    <link rel="stylesheet" href="styleRelatorio.css">
+    <link rel="shortcut icon" href="../assets/logo.ico" type="image/x-icon">
+</head>
+<body>
+   
+    <div class="container">
+        <header>
+            <h1>Relatório de Ações de Reflorestamento</h1>
+            <p>Busque e visualize os registros de reflorestamento realizados.</p>
+        </header>
+
+        <div class="search-container">
+            <h2>Filtros de Busca</h2>
+            <form id="search-form" class="search-form">
+                <div class="form-group">
+                    <label for="usuario">Usuário</label>
+                    <input type="text" id="usuario" name="usuario" placeholder="Nome do usuário">
+                </div>
+                <div class="form-group">
+                    <label for="especie">Espécie de Árvore</label>
+                    <select id="especie" name="especie">
+                        <option value="">Todas as espécies</option>
+                        <option value="ipe">Ipê</option>
+                        <option value="angico">Angico</option>
+                        <option value="aroeira">Aroeira</option>
+                        <option value="jequitiba">Jequitibá</option>
+                        <option value="peroba-campo">Peroba do Campo</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Buscar</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="results-container">
+            <div class="results-summary" id="results-summary">
+                Nenhuma busca realizada. Utilize os filtros acima para buscar registros.
+            </div>
+            <div id="results-table-container">
+                <table id="results-table">
+                    <thead>
+                        <tr>
+                            <th>Usuário</th>
+                            <th>Espécie</th>
+                            <th>Quantidade</th>
+                            <th>Local</th>
+                            <th>Data do Plantio</th>
+                        </tr>
+                    </thead>
+                    <tbody id="results-body">
+
+                    </tbody>
+                </table>
+                <div id="no-results" class="no-results" style="display: none;">
+                    Nenhum resultado encontrado para os filtros selecionados.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="toast" class="toast">
+        <span id="toast-icon" class="toast-icon">✓</span>
+        <span id="toast-text" class="toast-text">Mensagem</span>
+        <span class="toast-close" onclick="fecharToast()">×</span>
+    </div>
+
+    <script src="./relatorio.js"></script>    
+</body>
+</html>
