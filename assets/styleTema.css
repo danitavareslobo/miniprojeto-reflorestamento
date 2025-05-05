@@ -1,0 +1,95 @@
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #2E7D32;
+    --background-color: #E8F5E9;
+    --text-color: #212121;
+    --accent-color: #81C784;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #84fab0, #8fd3f4);
+    color: var(--text-color);
+    transition: all 0.3s ease;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+body.pau-brasil {
+    --primary-color: #D32F2F;
+    --secondary-color: #B71C1C;
+    --background-color: #FFEBEE;
+    --text-color: #212121;
+    --accent-color: #EF9A9A;
+  }
+  
+  body.castanheira {
+    --primary-color: #795548;
+    --secondary-color: #5D4037;
+    --background-color: #EFEBE9;
+    --text-color: #212121;
+    --accent-color: #A1887F;
+  }
+  
+  body.peroba-rosa {
+    --primary-color: #E91E63;
+    --secondary-color: #C2185B;
+    --background-color: #FCE4EC;
+    --text-color: #212121;
+    --accent-color: #F48FB1;
+  }
+
+  .toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s, transform 0.3s;
+    max-width: 350px;
+    display: flex;
+    align-items: center;
+}
+
+.toast.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.toast-success {
+    background-color: #81C784;
+}
+
+.toast-error {
+    background-color: #EF9A9A;
+}
+
+.toast-icon {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.toast-text {
+    flex-grow: 1;
+}
+
+.toast-close {
+    cursor: pointer;
+    margin-left: 10px;
+    font-weight: bold;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Reflorestamento</title>
+    <link rel="stylesheet" href="styleCadastro.css">
+    <link rel="shortcut icon" href="../assets/logo.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastre-se no Programa de Reflorestamento</h1>
+        <form id="cadastroForm">
+            <div class="form-group">
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="usuario">Nome de usuário</label>
+                <input type="text" id="usuario" name="usuario" required>
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmarSenha">Confirmar senha</label>
+                <input type="password" id="confirmarSenha" name="confirmarSenha" required>
+            </div>
+
+            <div class="form-group">
+                <label>Escolha sua árvore de avatar</label>
+                <p>Seu avatar determinará o tema visual da sua experiência na plataforma.</p>
+                <div class="tree-selection">
+                    <div class="tree-option" data-tree="pau-brasil">
+                        <img src="../assets/pau-brasil-madura.png" alt="Pau-Brasil" class="tree-img">
+                        <div class="tree-name">Pau-Brasil</div>
+                        <div class="tree-desc">Tom avermelhado, símbolo da nossa identidade nacional</div>
+                    </div>
+                    <div class="tree-option" data-tree="castanheira">
+                        <img src="../assets/castanheira-madura.png" alt="Castanheira" class="tree-img">
+                        <div class="tree-name">Castanheira</div>
+                        <div class="tree-desc">Tom marrom, representando força e resiliência</div>
+                    </div>
+                    <div class="tree-option" data-tree="peroba-rosa">
+                        <img src="../assets/peroba-rosa-madura.png" alt="Peroba-Rosa" class="tree-img">
+                        <div class="tree-name">Peroba-Rosa</div>
+                        <div class="tree-desc">Tom rosado, simbolizando renovação e esperança</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="toast" class="toast">
+                <span id="toast-icon" class="toast-icon">✓</span>
+                <span id="toast-text" class="toast-text">Mensagem</span>
+                <span class="toast-close" onclick="fecharToast()">×</span>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Cadastrar</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="cadastro.js"></script>
+</body>
+</html>
